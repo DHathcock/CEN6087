@@ -33,7 +33,7 @@ public class CarGenerator {
         int direction = ThreadLocalRandom.current().nextInt(0,2);
         Point prevPoint;
         Point currPoint = entryPoint.clone();
-        Point [] turnPoint = new Point[maxNumOfTurns+1];
+        Point [] turnPoint = new Point[maxNumOfTurns];
         while(numOfTurns <= maxNumOfTurns)
         {
             prevPoint = currPoint;
