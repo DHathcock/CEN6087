@@ -1,10 +1,10 @@
 import java.util.Queue;
 
 public class Car {
-    public enum Light_Status{
-        RED, YELLOW, GREEN
-    }
-    static int carID;
+    static int carIDCounter;
+    int carID;
+    static int averageLength;
+    static int clearance;
     Point entryPoint;
     Point exitPoint;
     int entryTime;
@@ -12,8 +12,17 @@ public class Car {
     int speed;
     int acceleration;
     int length;
-    int clearance;
-
     Point[] path;
     Hashmap<TrafficLight> waitingList;
+
+    Car(Point entryLoc, Point exitLoc, int enterTime; int exTime; int s, int a, int l){
+        carID = ++carIDCounter;
+        entryPoint = entryLoc;
+        exitPoint = exitLoc;
+        speed = s;
+        acceleration = a;
+        length = l;
+    }
+
+
 }
