@@ -1,0 +1,22 @@
+{
+    "Grid":{
+        "NumberOfStreets": 4,
+        "NumberOfAvenues": 4,
+        "BlockSize": 20,
+        "CarInsertRate": 2,
+        "NumberOfCars": 50,
+        "MaxNumOfTurns": 2
+    },
+    "Car":{
+        "Size": 5,
+        "CruisingSpeed": 5,
+        "Acceleration": 1,
+        "Deceleration": 1
+    },
+    "TrafficLight": {
+        "MaxRedTime": 4000,
+        "MaxGreenTime": 3000,
+        "YellowTime": 1000
+    },
+    "SchedulingScheme": "Dumb"
+}
