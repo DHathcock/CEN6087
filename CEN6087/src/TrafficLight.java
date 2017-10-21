@@ -10,5 +10,6 @@ public class TrafficLight {
     int[] yellowLight_Cycle;
     int[] greenLight_Cycle;
     char scheduling;
-    Queue[] lanes;
+    Queue[] NS_lanes;
+    Queue[] EW_lanes;
 }
