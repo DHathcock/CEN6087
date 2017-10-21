@@ -1,28 +1,24 @@
-import java.util.Queue;
-
 public class Car {
-    static int carIDCounter;
-    int carID;
-    static int averageLength;
-    static int clearance;
-    Point entryPoint;
-    Point exitPoint;
-    int entryTime;
-    int exitTime;
-    int speed;
-    int acceleration;
-    int length;
-    Point[] path;
-    Hashmap<TrafficLight> waitingList;
+    private final int Size;
+    private final int CruisingSpeed;
+    private final int Acceleration;
+    private final int Deceleration;
+    private final Point EntryPoint;
+    private final Point ExitPoint;
+    private final Point[] TurnPoint;
+    private final int NumOfTurns;
+    private final int EnterTime;
+    private int ExitTime;
 
-    Car(Point entryLoc, Point exitLoc, int enterTime; int exTime; int s, int a, int l){
-        carID = ++carIDCounter;
-        entryPoint = entryLoc;
-        exitPoint = exitLoc;
-        speed = s;
-        acceleration = a;
-        length = l;
+    public Car(int size, int cruisingSpeed, int acceleration, int deceleration, Point entryPoint, Point exitPoint, Point[] turnPoint, int numOfTurns, int enterTime) {
+        this.Size = size;
+        this.CruisingSpeed = cruisingSpeed;
+        this.Acceleration = acceleration;
+        this.Deceleration = deceleration;
+        this.EntryPoint = entryPoint;
+        this.ExitPoint = exitPoint;
+        this.TurnPoint = turnPoint;
+        this.NumOfTurns = numOfTurns;
+        this.EnterTime = enterTime;
     }
-
-
 }
